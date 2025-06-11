@@ -1,4 +1,4 @@
-import{_ as a,c as o,a as n,Q as l,R as d,t as h,o as u}from"./8iTXloT7.js";const c={name:"Frog",data(){return{question:"",answer:""}},methods:{askFrog(){if(!this.question.trim()){this.answer="Quak! Bitte stell auch eine Frage.";return}this.answer="Der Frosch überlegt...";const r=[`Ein Frosch am Teich, so klug und fein,
+import{_ as a,c as o,a as n,R as l,S as d,t as h,o as u}from"./B8tGJ2k_.js";const c={name:"Frog",data(){return{question:"",answer:""}},methods:{askFrog(){if(!this.question.trim()){this.answer="Quak! Bitte stell auch eine Frage.";return}this.answer="Der Frosch überlegt...";const r=[`Ein Frosch am Teich, so klug und fein,
 Antwortet dir, doch stets im Reim.`,`Quak! Das Wasser fließt und rinnt,
 Auch deine Frage nun beginnt.`,`Im Morgentau, im Sonnenschein,
 Findet der Frosch die Antwort rein.`,`Nicht alles klar, doch hör genau,
