@@ -11,8 +11,9 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui'
   ],
-  
+
   app: {
+    baseURL: '/jasonbraun/', // WICHTIG: mit führendem und abschließendem Slash!
     head: {
       script: [
         {
