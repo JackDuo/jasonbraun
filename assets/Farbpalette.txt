@@ -1,0 +1,39 @@
+:root {
+  /* Lila */
+  --color-purple-main: #6C18B0;
+  --color-purple-light: #8E3FFC;
+  --color-purple-dark: #4A0E7A;
+
+  /* Orange */
+  --color-orange-bright: #FF6A00;
+  --color-orange-dark: #E65100;
+  --color-orange-darker: #BF360C;
+  --color-orange-hover: #FF8C00;
+
+  /* Weiß */
+  --color-white: #FFFFFF;
+  --color-white-transparent: rgba(255, 255, 255, 0.9);
+}
+
+
+bzw
+
+🟣 Lila-Töne
+Name	HEX	Beschreibung
+Lila Hauptfarbe	#6C18B0	Sattes Violett
+Lila heller	#8E3FFC	Leicht aufgehelltes Lila
+Lila dunkler	#4A0E7A	Tiefes Dunkellila
+
+
+🟠 Orange-Töne (kräftig und dunkler)
+Name	HEX	Beschreibung
+Orange kräftig	#FF6A00	Sattes, warmes Orange
+Orange dunkel	#E65100	Tiefes, dunkles Orange
+Orange sehr dunkel	#BF360C	Sehr dunkles Orange mit rötlichem Ton
+Orange Hover	#FF8C00	Etwas helleres Orange für Hover-Zustände
+
+
+⚪ Weiß-Töne
+Name	HEX	Beschreibung
+Weiß (Standard)	#FFFFFF	Reines Weiß
+Weiß transparent	rgba(255, 255, 255, 0.9)	Weiß mit leichter Transparenz
