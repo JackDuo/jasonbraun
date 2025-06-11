@@ -1,120 +1,13 @@
 <!DOCTYPE html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style id="nuxt-ui-colors">@layer base {
-  :root {
-  --ui-color-primary-50: var(--color-green-50, oklch(98.2% 0.018 155.826));
-  --ui-color-primary-100: var(--color-green-100, oklch(96.2% 0.044 156.743));
-  --ui-color-primary-200: var(--color-green-200, oklch(92.5% 0.084 155.995));
-  --ui-color-primary-300: var(--color-green-300, oklch(87.1% 0.15 154.449));
-  --ui-color-primary-400: var(--color-green-400, oklch(79.2% 0.209 151.711));
-  --ui-color-primary-500: var(--color-green-500, oklch(72.3% 0.219 149.579));
-  --ui-color-primary-600: var(--color-green-600, oklch(62.7% 0.194 149.214));
-  --ui-color-primary-700: var(--color-green-700, oklch(52.7% 0.154 150.069));
-  --ui-color-primary-800: var(--color-green-800, oklch(44.8% 0.119 151.328));
-  --ui-color-primary-900: var(--color-green-900, oklch(39.3% 0.095 152.535));
-  --ui-color-primary-950: var(--color-green-950, oklch(26.6% 0.065 152.934));
-  --ui-color-secondary-50: var(--color-blue-50, oklch(97% 0.014 254.604));
-  --ui-color-secondary-100: var(--color-blue-100, oklch(93.2% 0.032 255.585));
-  --ui-color-secondary-200: var(--color-blue-200, oklch(88.2% 0.059 254.128));
-  --ui-color-secondary-300: var(--color-blue-300, oklch(80.9% 0.105 251.813));
-  --ui-color-secondary-400: var(--color-blue-400, oklch(70.7% 0.165 254.624));
-  --ui-color-secondary-500: var(--color-blue-500, oklch(62.3% 0.214 259.815));
-  --ui-color-secondary-600: var(--color-blue-600, oklch(54.6% 0.245 262.881));
-  --ui-color-secondary-700: var(--color-blue-700, oklch(48.8% 0.243 264.376));
-  --ui-color-secondary-800: var(--color-blue-800, oklch(42.4% 0.199 265.638));
-  --ui-color-secondary-900: var(--color-blue-900, oklch(37.9% 0.146 265.522));
-  --ui-color-secondary-950: var(--color-blue-950, oklch(28.2% 0.091 267.935));
-  --ui-color-success-50: var(--color-green-50, oklch(98.2% 0.018 155.826));
-  --ui-color-success-100: var(--color-green-100, oklch(96.2% 0.044 156.743));
-  --ui-color-success-200: var(--color-green-200, oklch(92.5% 0.084 155.995));
-  --ui-color-success-300: var(--color-green-300, oklch(87.1% 0.15 154.449));
-  --ui-color-success-400: var(--color-green-400, oklch(79.2% 0.209 151.711));
-  --ui-color-success-500: var(--color-green-500, oklch(72.3% 0.219 149.579));
-  --ui-color-success-600: var(--color-green-600, oklch(62.7% 0.194 149.214));
-  --ui-color-success-700: var(--color-green-700, oklch(52.7% 0.154 150.069));
-  --ui-color-success-800: var(--color-green-800, oklch(44.8% 0.119 151.328));
-  --ui-color-success-900: var(--color-green-900, oklch(39.3% 0.095 152.535));
-  --ui-color-success-950: var(--color-green-950, oklch(26.6% 0.065 152.934));
-  --ui-color-info-50: var(--color-blue-50, oklch(97% 0.014 254.604));
-  --ui-color-info-100: var(--color-blue-100, oklch(93.2% 0.032 255.585));
-  --ui-color-info-200: var(--color-blue-200, oklch(88.2% 0.059 254.128));
-  --ui-color-info-300: var(--color-blue-300, oklch(80.9% 0.105 251.813));
-  --ui-color-info-400: var(--color-blue-400, oklch(70.7% 0.165 254.624));
-  --ui-color-info-500: var(--color-blue-500, oklch(62.3% 0.214 259.815));
-  --ui-color-info-600: var(--color-blue-600, oklch(54.6% 0.245 262.881));
-  --ui-color-info-700: var(--color-blue-700, oklch(48.8% 0.243 264.376));
-  --ui-color-info-800: var(--color-blue-800, oklch(42.4% 0.199 265.638));
-  --ui-color-info-900: var(--color-blue-900, oklch(37.9% 0.146 265.522));
-  --ui-color-info-950: var(--color-blue-950, oklch(28.2% 0.091 267.935));
-  --ui-color-warning-50: var(--color-yellow-50, oklch(98.7% 0.026 102.212));
-  --ui-color-warning-100: var(--color-yellow-100, oklch(97.3% 0.071 103.193));
-  --ui-color-warning-200: var(--color-yellow-200, oklch(94.5% 0.129 101.54));
-  --ui-color-warning-300: var(--color-yellow-300, oklch(90.5% 0.182 98.111));
-  --ui-color-warning-400: var(--color-yellow-400, oklch(85.2% 0.199 91.936));
-  --ui-color-warning-500: var(--color-yellow-500, oklch(79.5% 0.184 86.047));
-  --ui-color-warning-600: var(--color-yellow-600, oklch(68.1% 0.162 75.834));
-  --ui-color-warning-700: var(--color-yellow-700, oklch(55.4% 0.135 66.442));
-  --ui-color-warning-800: var(--color-yellow-800, oklch(47.6% 0.114 61.907));
-  --ui-color-warning-900: var(--color-yellow-900, oklch(42.1% 0.095 57.708));
-  --ui-color-warning-950: var(--color-yellow-950, oklch(28.6% 0.066 53.813));
-  --ui-color-error-50: var(--color-red-50, oklch(97.1% 0.013 17.38));
-  --ui-color-error-100: var(--color-red-100, oklch(93.6% 0.032 17.717));
-  --ui-color-error-200: var(--color-red-200, oklch(88.5% 0.062 18.334));
-  --ui-color-error-300: var(--color-red-300, oklch(80.8% 0.114 19.571));
-  --ui-color-error-400: var(--color-red-400, oklch(70.4% 0.191 22.216));
-  --ui-color-error-500: var(--color-red-500, oklch(63.7% 0.237 25.331));
-  --ui-color-error-600: var(--color-red-600, oklch(57.7% 0.245 27.325));
-  --ui-color-error-700: var(--color-red-700, oklch(50.5% 0.213 27.518));
-  --ui-color-error-800: var(--color-red-800, oklch(44.4% 0.177 26.899));
-  --ui-color-error-900: var(--color-red-900, oklch(39.6% 0.141 25.723));
-  --ui-color-error-950: var(--color-red-950, oklch(25.8% 0.092 26.042));
-  --ui-color-neutral-50: var(--color-slate-50, oklch(98.4% 0.003 247.858));
-  --ui-color-neutral-100: var(--color-slate-100, oklch(96.8% 0.007 247.896));
-  --ui-color-neutral-200: var(--color-slate-200, oklch(92.9% 0.013 255.508));
-  --ui-color-neutral-300: var(--color-slate-300, oklch(86.9% 0.022 252.894));
-  --ui-color-neutral-400: var(--color-slate-400, oklch(70.4% 0.04 256.788));
-  --ui-color-neutral-500: var(--color-slate-500, oklch(55.4% 0.046 257.417));
-  --ui-color-neutral-600: var(--color-slate-600, oklch(44.6% 0.043 257.281));
-  --ui-color-neutral-700: var(--color-slate-700, oklch(37.2% 0.044 257.287));
-  --ui-color-neutral-800: var(--color-slate-800, oklch(27.9% 0.041 260.031));
-  --ui-color-neutral-900: var(--color-slate-900, oklch(20.8% 0.042 265.755));
-  --ui-color-neutral-950: var(--color-slate-950, oklch(12.9% 0.042 264.695));
-  }
-  :root, .light {
-  --ui-primary: var(--ui-color-primary-500);
-  --ui-secondary: var(--ui-color-secondary-500);
-  --ui-success: var(--ui-color-success-500);
-  --ui-info: var(--ui-color-info-500);
-  --ui-warning: var(--ui-color-warning-500);
-  --ui-error: var(--ui-color-error-500);
-  }
-  .dark {
-  --ui-primary: var(--ui-color-primary-400);
-  --ui-secondary: var(--ui-color-secondary-400);
-  --ui-success: var(--ui-color-success-400);
-  --ui-info: var(--ui-color-info-400);
-  --ui-warning: var(--ui-color-warning-400);
-  --ui-error: var(--ui-color-error-400);
-  }
-}</style>
 <script src="https://kit.fontawesome.com/f5553d3254.js" crossorigin="anonymous"></script>
-<style>.fade-enter-active[data-v-5c05173f],.fade-leave-active[data-v-5c05173f]{transition:opacity .1s}.fade-enter[data-v-5c05173f],.fade-leave-to[data-v-5c05173f]{opacity:0}.link[data-v-5c05173f]{align-items:center;border-radius:.25em;color:#fff;cursor:pointer;display:flex;font-weight:400;height:1.5em;margin:.1em 2px;padding:.4em;position:relative;text-decoration:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.link[data-v-5c05173f]:hover{background-color:var(--sidebar-item-hover)}.link.active[data-v-5c05173f]{background-color:var(--sidebar-item-active)}.link .icon[data-v-5c05173f]{flex-shrink:0;margin-right:10px;width:25px}</style>
-<style>:root{--sidebar-bg-color:#e07b39;--sidebar-item-hover:#d68a3a;--sidebar-item-active:#b55f2b}</style>
-<style>.sidebar[data-v-3cda021e]{background-color:var(--sidebar-bg-color);bottom:0;color:#fff;display:flex;flex-direction:column;float:left;left:0;padding:.5em;position:fixed;top:0;transition:.3s ease;z-index:1}.animated-title[data-v-3cda021e]{background-color:#e07b39;border-bottom-right-radius:15px;color:#fff;left:2px;margin-left:10vw;padding-bottom:1px;padding-left:5rem;padding-right:2.5rem;position:absolute;text-align:right;top:-2vh;transition:all 5s linear}.sidebar h1[data-v-3cda021e]{height:2.5em}.collapse-icon[data-v-3cda021e]{bottom:0;color:#ffffffb3;padding:.75em;position:absolute;transition:.2s linear}.rotate-180[data-v-3cda021e]{margin-left:-10px;transform:rotate(-100deg);transition:.2s linear}.slide-in-enter-from[data-v-3cda021e],.slide-in-leave-to[data-v-3cda021e]{opacity:0;transform:translate(-100%)}.slide-in-enter-to[data-v-3cda021e],.slide-in-leave-from[data-v-3cda021e]{opacity:1;transform:translate(0)}.slide-in-enter-active[data-v-3cda021e],.slide-in-leave-active[data-v-3cda021e]{transition:all .3s ease}</style>
-<style>.noise-background[data-v-ff3f84e2]{background-position:50%;background-repeat:no-repeat;background-size:cover;height:100vh;left:0;pointer-events:none;position:fixed;top:0;width:100vw;z-index:-1000}</style>
-<style>.background[data-v-9ef64a2c]{background-position:50%;background-repeat:no-repeat;background-size:cover;top:0;right:0;bottom:0;left:0;position:fixed;transition:background-image 1s ease-in-out;z-index:-1}</style>
-<style>[data-v-e263e7ec]:root{--color-purple:#6c18b0;--color-purple-light:#b197fc;--color-orange:#d67228;--color-orange-dark:#a14800;--color-white:#fff}body[data-v-e263e7ec],html[data-v-e263e7ec]{background-color:var(--color-white);color:#333;font-family:sans-serif;height:100%;margin:0;padding:0}.main-content[data-v-e263e7ec]{margin-left:200px;padding:2rem}.icon-demo[data-v-e263e7ec]{display:flex;font-size:2rem;gap:1rem;margin-top:1rem}.flipped[data-v-e263e7ec]{transform:scaleX(-1)}</style>
-<style>.Full-container[data-v-605ba10b]{background-color:#e0be3999;border-radius:1vw;font-family:Lucida Console,Monaco,monospace;height:auto;margin:20px 12%;padding-bottom:50px;padding-top:2vh;position:relative;width:80vw}.radio-container[data-v-605ba10b]{font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;margin:20px auto;padding-top:5vh;position:relative;-webkit-user-select:none;-moz-user-select:none;user-select:none;width:40vw}.knob[data-v-605ba10b]{cursor:grab;display:block;margin:0 auto;text-align:right;width:100px}.mute-button[data-v-605ba10b]{height:auto;position:absolute;right:20px;transition:opacity .2s ease-in-out;width:5rem;z-index:100}.mute-hint[data-v-605ba10b]{color:#fff;font-size:.9rem;position:absolute;right:22px;text-align:right;top:6rem;width:150px;z-index:99}.frequency-line[data-v-605ba10b]{background:#ccc;border-radius:5px;height:20px;margin:20px 0;position:relative}.frequency-line .line[data-v-605ba10b]{background:#555;height:2px;left:0;position:absolute;right:0;top:50%;transform:translateY(-50%)}.frequency-line .indicator[data-v-605ba10b]{background:#e63946;border-radius:2px;height:20px;position:absolute;top:0;transform:translate(-50%);width:4px}.digital-display[data-v-605ba10b]{font-size:1.4rem;font-weight:700;margin-bottom:10px;text-align:center}.info-box[data-v-605ba10b]{margin-top:10px;position:relative;text-align:left}.station-info[data-v-605ba10b]{transition:opacity .3s ease}.station-info h2[data-v-605ba10b]{font-size:1.2rem;margin:0 0 5px}.station-info img[data-v-605ba10b]{border-radius:5px;max-width:100px}.no-station[data-v-605ba10b]{color:#888;font-style:italic;opacity:.5}</style>
-<link rel="stylesheet" href="/assets/entry.D4jxhQcb.css" crossorigin>
-<link rel="preload" as="fetch" crossorigin="anonymous" href="/Radio/_payload.json?e85878e8-e070-4af4-ad08-dbea28450e52">
-<link rel="modulepreload" as="script" crossorigin href="/assets/8iTXloT7.js">
-<link rel="modulepreload" as="script" crossorigin href="/assets/CMwPGsfQ.js">
-<link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/assets/builds/meta/e85878e8-e070-4af4-ad08-dbea28450e52.json">
-<link rel="prefetch" as="image" type="image/png" href="/assets/LogoSolo.BB93x0kK.png">
-<link rel="prefetch" as="script" crossorigin href="/assets/BQm4Bivu.js">
-<link rel="prefetch" as="script" crossorigin href="/assets/BgOxzUV8.js">
-<link rel="prefetch" as="script" crossorigin href="/assets/sBy0V6w9.js">
-<link rel="prefetch" as="image" type="image/png" href="/assets/mutebutton.B_rVS7f9.png">
-<link rel="prefetch" as="image" type="image/png" href="/assets/knob.CozYJx8c.png">
-<script type="module" src="/assets/8iTXloT7.js" crossorigin></script><script>"use strict";(()=>{const t=window,e=document.documentElement,c=["dark","light"],n=getStorageValue("localStorage","nuxt-color-mode")||"system";let i=n==="system"?u():n;const r=e.getAttribute("data-color-mode-forced");r&&(i=r),l(i),t["__NUXT_COLOR_MODE__"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=""+o+"",a="";e.classList?e.classList.add(s):e.className+=" "+s,a&&e.setAttribute("data-"+a,o)}function d(o){const s=""+o+"",a="";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,"g"),""),a&&e.removeAttribute("data-"+a)}function f(o){return t.matchMedia("(prefers-color-scheme"+o+")")}function u(){if(t.matchMedia&&f("").media!=="not all"){for(const o of c)if(f(":"+o).matches)return o}return"light"}})();function getStorageValue(t,e){switch(t){case"localStorage":return window.localStorage.getItem(e);case"sessionStorage":return window.sessionStorage.getItem(e);case"cookie":return getCookie(e);default:return null}}function getCookie(t){const c=("; "+window.document.cookie).split("; "+t+"=");if(c.length===2)return c.pop()?.split(";").shift()}</script></head><body><div id="__nuxt" class="isolate"></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/Radio/_payload.json?e85878e8-e070-4af4-ad08-dbea28450e52">[{"state":1,"once":7,"_errors":8,"serverRendered":5,"path":10,"prerenderedAt":11},["Reactive",2],{"$scolor-mode":3},{"preference":4,"value":4,"unknown":5,"forced":6},"system",true,false,["Set"],["ShallowReactive",9],{},"/Radio",1749669556160]</script>
-<script>window.__NUXT__={};window.__NUXT__.config={public:{"nuxt-scripts":{version:"",defaultScriptOptions:{trigger:"onNuxtReady"}}},app:{baseURL:"/",buildId:"e85878e8-e070-4af4-ad08-dbea28450e52",buildAssetsDir:"assets",cdnURL:""}}</script></body></html>
+<link rel="stylesheet" href="/jasonbraun/assets/entry.D4jxhQcb.css" crossorigin>
+<link rel="modulepreload" as="script" crossorigin href="/jasonbraun/assets/8iTXloT7.js">
+<link rel="prefetch" as="image" type="image/png" href="/jasonbraun/assets/LogoSolo.BB93x0kK.png">
+<link rel="prefetch" as="style" crossorigin href="/jasonbraun/assets/error-404.4oxyXxx0.css">
+<link rel="prefetch" as="script" crossorigin href="/jasonbraun/assets/BQm4Bivu.js">
+<link rel="prefetch" as="script" crossorigin href="/jasonbraun/assets/BgOxzUV8.js">
+<link rel="prefetch" as="style" crossorigin href="/jasonbraun/assets/error-500.CZqNkBuR.css">
+<link rel="prefetch" as="script" crossorigin href="/jasonbraun/assets/sBy0V6w9.js">
+<script type="module" src="/jasonbraun/assets/8iTXloT7.js" crossorigin></script><script>"use strict";(()=>{const t=window,e=document.documentElement,c=["dark","light"],n=getStorageValue("localStorage","nuxt-color-mode")||"system";let i=n==="system"?u():n;const r=e.getAttribute("data-color-mode-forced");r&&(i=r),l(i),t["__NUXT_COLOR_MODE__"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=""+o+"",a="";e.classList?e.classList.add(s):e.className+=" "+s,a&&e.setAttribute("data-"+a,o)}function d(o){const s=""+o+"",a="";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,"g"),""),a&&e.removeAttribute("data-"+a)}function f(o){return t.matchMedia("(prefers-color-scheme"+o+")")}function u(){if(t.matchMedia&&f("").media!=="not all"){for(const o of c)if(f(":"+o).matches)return o}return"light"}})();function getStorageValue(t,e){switch(t){case"localStorage":return window.localStorage.getItem(e);case"sessionStorage":return window.sessionStorage.getItem(e);case"cookie":return getCookie(e);default:return null}}function getCookie(t){const c=("; "+window.document.cookie).split("; "+t+"=");if(c.length===2)return c.pop()?.split(";").shift()}</script></head><body><div id="__nuxt" class="isolate"></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="false" id="__NUXT_DATA__">[{"prerenderedAt":1,"serverRendered":2},1749669659759,false]</script>
+<script>window.__NUXT__={};window.__NUXT__.config={public:{"nuxt-scripts":{version:"",defaultScriptOptions:{trigger:"onNuxtReady"}}},app:{baseURL:"/jasonbraun/",buildId:"f2abfb05-5eb8-4410-a8e1-37e83ad56b49",buildAssetsDir:"assets",cdnURL:""}}</script></body></html>
